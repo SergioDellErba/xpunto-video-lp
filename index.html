@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XPUNTO LP</title>
+    <title>Meu Vídeo</title>
     <link rel="icon" href="imagens/favicon.ico" type="image/x-icon">
     <style>
         body, html {
@@ -13,17 +13,19 @@
         }
         video {
             width: 100%;
+            max-width: 100%; /* Define a largura máxima como 100% para evitar que o vídeo ultrapasse a largura da tela */
             height: 100%;
             object-fit: cover;
             aspect-ratio: 16/9;
-            margin: 0; /* Adiciona margens zero para garantir que o vídeo se ajuste corretamente */
+            margin: 0;
         }
 
         @media (max-width: 767px) {
             video {
                 width: 100%;
                 height: auto;
-                object-fit: contain; /* Altera object-fit para "contain" para garantir que o vídeo caiba completamente */
+                max-height: 100vh; /* Define a altura máxima como 100% da altura da viewport */
+                object-fit: contain;
             }
         }
     </style>
