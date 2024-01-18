@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XPUNTO LP</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            aspect-ratio: 16/9; /* Adiciona a proporção 16x9 */
+        }
+
+        @media (max-width: 767px) {
+            /* Ajusta o estilo para dispositivos móveis */
+            video {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<video controls autoplay>
+    <source src="imagens/Xpunto-lp.mp4" type="video/mp4">
+    Seu navegador não suporta a tag de vídeo.
+</video>
+
+</body>
+</html>
